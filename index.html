@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Basis Phoenix Science Bowl Club</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            sage: {
+              50: '#f3f8f6',
+              100: '#e1eee9',
+              200: '#c2ddd3',
+              300: '#9fc8ba',
+              400: '#71ab97',
+              500: '#4d8f79',
+              600: '#3d7463',
+              700: '#345d51',
+              800: '#2f4a42',
+              900: '#2a3d37'
+            }
+          },
+          fontFamily: {
+            display: ['Plus Jakarta Sans', 'ui-sans-serif', 'system-ui'],
+            body: ['Manrope', 'ui-sans-serif', 'system-ui']
+          },
+          boxShadow: {
+            panel: '0 10px 40px -15px rgba(15, 23, 42, 0.22)'
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet" />
+  <style>
+    .science-grid {
+      background-image:
+        linear-gradient(to right, rgba(77, 143, 121, 0.08) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(77, 143, 121, 0.08) 1px, transparent 1px);
+      background-size: 32px 32px;
+    }
+
+    .fade-in-up {
+      animation: fadeInUp 0.75s ease-out both;
+    }
+
+    .fade-in-up-delay {
+      animation: fadeInUp 0.95s ease-out both;
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(18px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-800 font-body antialiased selection:bg-sage-200 selection:text-sage-900">
+  <div class="relative overflow-hidden">
+    <div class="absolute inset-0 -z-20 bg-gradient-to-br from-sage-100 via-white to-slate-100"></div>
+    <div class="science-grid absolute inset-0 -z-10"></div>
+
+    <header class="mx-auto flex w-full max-w-6xl items-center justify-between px-6 py-6 lg:px-10">
+      <div class="flex items-center gap-3">
+        <div class="h-10 w-10 rounded-xl bg-sage-600 text-white grid place-items-center font-display text-lg shadow-panel">SB</div>
+        <div>
+          <p class="font-display text-slate-900 text-sm sm:text-base">Basis Phoenix</p>
+          <p class="text-xs text-slate-600">Science Bowl Club</p>
+        </div>
+      </div>
+      <a href="#meeting" class="rounded-full border border-sage-300 bg-white/90 px-4 py-2 text-sm font-semibold text-sage-800 transition hover:bg-sage-50">
+        Meeting Info
+      </a>
+    </header>
+
+    <main>
+      <section class="mx-auto max-w-6xl px-6 pb-16 pt-8 lg:px-10 lg:pb-24 lg:pt-12">
+        <div class="relative rounded-3xl border border-sage-200/70 bg-white/85 p-8 shadow-panel backdrop-blur md:p-12">
+          <div class="absolute -right-20 -top-20 h-48 w-48 rounded-full bg-sage-200/40 blur-2xl"></div>
+          <div class="absolute -bottom-16 -left-16 h-44 w-44 rounded-full bg-slate-300/30 blur-2xl"></div>
+
+          <div class="relative">
+            <p class="fade-in-up inline-flex rounded-full border border-sage-300 bg-sage-50 px-4 py-1 text-xs font-semibold uppercase tracking-widest text-sage-700">
+              BASIS PHOENIX HIGH SCHOOL
+            </p>
+            <h1 class="fade-in-up mt-5 font-display text-4xl font-extrabold leading-tight text-slate-900 sm:text-5xl lg:text-6xl">
+              Have Fun at Science Bowl
+            </h1>
+            <p class="fade-in-up-delay mt-5 max-w-2xl text-base text-slate-700 sm:text-lg">
+              Basis Phoenix High School Science Bowl Club
+            </p>
+
+            <div class="mt-8 grid gap-4 sm:grid-cols-2 lg:max-w-3xl">
+              <div class="rounded-2xl border border-sage-200 bg-sage-50/70 p-4">
+                <p class="text-xs font-semibold uppercase tracking-wide text-sage-800">Weekly Focus</p>
+                <p class="mt-1 text-sm text-slate-700">Team rounds, buzzer practice, and strategy building.</p>
+              </div>
+              <div class="rounded-2xl border border-slate-200 bg-white p-4">
+                <p class="text-xs font-semibold uppercase tracking-wide text-slate-700">Club Culture</p>
+                <p class="mt-1 text-sm text-slate-700">Friendly, curious, and welcoming for all science enthusiasts.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="mx-auto max-w-6xl px-6 pb-12 lg:px-10 lg:pb-16">
+        <div class="grid gap-8 lg:grid-cols-[1.2fr_0.8fr] lg:items-center">
+          <article class="rounded-3xl border border-slate-200 bg-white p-8 shadow-panel">
+            <h2 class="font-display text-2xl font-bold text-slate-900 sm:text-3xl">About Us</h2>
+            <p class="mt-4 leading-relaxed text-slate-700">
+              The Basis Phoenix Science Bowl Club is a welcoming space where students sharpen scientific thinking through
+              friendly competition. Members collaborate, practice rapid problem-solving, and explore exciting questions
+              across many branches of science while building confidence and teamwork.
+            </p>
+          </article>
+
+          <div class="rounded-3xl border border-sage-200 bg-gradient-to-br from-sage-600 to-sage-700 p-8 text-white shadow-panel">
+            <p class="text-xs font-semibold uppercase tracking-widest text-sage-100">Why Join</p>
+            <ul class="mt-4 space-y-3 text-sm sm:text-base">
+              <li>Strengthen core science and math skills</li>
+              <li>Build quick recall and collaboration</li>
+              <li>Compete in an encouraging team environment</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="topics" class="mx-auto max-w-6xl px-6 pb-16 lg:px-10 lg:pb-20">
+        <div class="mb-7 flex items-end justify-between gap-4">
+          <div>
+            <h2 class="font-display text-2xl font-bold text-slate-900 sm:text-3xl">Topics Covered</h2>
+            <p class="mt-2 text-sm text-slate-600 sm:text-base">Core Science Bowl subject areas we practice each week.</p>
+          </div>
+        </div>
+
+        <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          <a href="topics/biology.html" class="group rounded-2xl border border-slate-200 bg-white p-5 transition hover:-translate-y-1 hover:border-sage-300 hover:shadow-panel focus:outline-none focus-visible:ring-2 focus-visible:ring-sage-500">
+            <h3 class="font-display text-lg font-semibold text-slate-900">Biology</h3>
+            <p class="mt-2 text-sm text-slate-600">Cells, genetics, ecosystems, and human systems.</p>
+            <p class="mt-3 text-xs font-semibold uppercase tracking-wide text-sage-700">View Sources</p>
+          </a>
+          <a href="topics/chemistry.html" class="group rounded-2xl border border-slate-200 bg-white p-5 transition hover:-translate-y-1 hover:border-sage-300 hover:shadow-panel focus:outline-none focus-visible:ring-2 focus-visible:ring-sage-500">
+            <h3 class="font-display text-lg font-semibold text-slate-900">Chemistry</h3>
+            <p class="mt-2 text-sm text-slate-600">Reactions, structure, periodic trends, and stoichiometry.</p>
+            <p class="mt-3 text-xs font-semibold uppercase tracking-wide text-sage-700">View Sources</p>
+          </a>
+          <a href="topics/physics.html" class="group rounded-2xl border border-slate-200 bg-white p-5 transition hover:-translate-y-1 hover:border-sage-300 hover:shadow-panel focus:outline-none focus-visible:ring-2 focus-visible:ring-sage-500">
+            <h3 class="font-display text-lg font-semibold text-slate-900">Physics</h3>
+            <p class="mt-2 text-sm text-slate-600">Mechanics, energy, waves, electricity, and modern physics.</p>
+            <p class="mt-3 text-xs font-semibold uppercase tracking-wide text-sage-700">View Sources</p>
+          </a>
+          <a href="topics/mathematics.html" class="group rounded-2xl border border-slate-200 bg-white p-5 transition hover:-translate-y-1 hover:border-sage-300 hover:shadow-panel focus:outline-none focus-visible:ring-2 focus-visible:ring-sage-500">
+            <h3 class="font-display text-lg font-semibold text-slate-900">Mathematics</h3>
+            <p class="mt-2 text-sm text-slate-600">Algebra, geometry, probability, and analytical reasoning.</p>
+            <p class="mt-3 text-xs font-semibold uppercase tracking-wide text-sage-700">View Sources</p>
+          </a>
+          <a href="topics/earth-space.html" class="group rounded-2xl border border-slate-200 bg-white p-5 transition hover:-translate-y-1 hover:border-sage-300 hover:shadow-panel focus:outline-none focus-visible:ring-2 focus-visible:ring-sage-500">
+            <h3 class="font-display text-lg font-semibold text-slate-900">Earth &amp; Space</h3>
+            <p class="mt-2 text-sm text-slate-600">Geology, climate, astronomy, and planetary science.</p>
+            <p class="mt-3 text-xs font-semibold uppercase tracking-wide text-sage-700">View Sources</p>
+          </a>
+          <a href="topics/energy.html" class="group rounded-2xl border border-slate-200 bg-white p-5 transition hover:-translate-y-1 hover:border-sage-300 hover:shadow-panel focus:outline-none focus-visible:ring-2 focus-visible:ring-sage-500">
+            <h3 class="font-display text-lg font-semibold text-slate-900">Energy</h3>
+            <p class="mt-2 text-sm text-slate-600">Thermodynamics, resources, sustainability, and power systems.</p>
+            <p class="mt-3 text-xs font-semibold uppercase tracking-wide text-sage-700">View Sources</p>
+          </a>
+        </div>
+      </section>
+
+      <section id="meeting" class="mx-auto max-w-6xl px-6 pb-20 lg:px-10">
+        <div class="relative overflow-hidden rounded-3xl border border-sage-300 bg-slate-900 p-8 text-slate-50 shadow-panel sm:p-10 lg:p-12">
+          <div class="absolute -right-24 -top-24 h-64 w-64 rounded-full border border-sage-400/40"></div>
+          <div class="absolute -bottom-32 -left-10 h-72 w-72 rounded-full border border-sage-400/30"></div>
+
+          <div class="relative grid gap-6 lg:grid-cols-[1fr_auto] lg:items-center">
+            <div>
+              <p class="text-xs font-semibold uppercase tracking-widest text-sage-300">Meeting Information</p>
+              <h2 class="mt-3 font-display text-3xl font-bold">Join Us Every Week</h2>
+              <p class="mt-3 max-w-2xl text-slate-300">
+                We meet for collaborative practice, engaging science challenges, and competition prep.
+              </p>
+            </div>
+
+            <div class="rounded-2xl border border-sage-300/60 bg-sage-500/15 p-5 backdrop-blur">
+              <p class="text-sm text-sage-100">Time</p>
+              <p class="mt-1 text-lg font-bold text-white">Tuesdays, 3:45 PM - 4:40 PM</p>
+              <p class="mt-3 text-sm text-sage-100">Location</p>
+              <p class="mt-1 text-lg font-bold text-white">Mrs. Brooks' Room</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="border-t border-slate-200 bg-white/80">
+      <div class="mx-auto max-w-6xl px-6 py-6 text-center text-sm text-slate-600 lg:px-10">
+        Basis Phoenix High School Science Bowl Club
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
